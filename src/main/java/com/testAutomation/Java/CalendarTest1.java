@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CalendarTest1 {
 
+    int i=100;
     static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {

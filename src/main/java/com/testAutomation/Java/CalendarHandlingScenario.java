@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 
 public class CalendarHandlingScenario {
 
@@ -52,6 +54,9 @@ public class CalendarHandlingScenario {
         //button[@data-testid='depart-btn']//span[text()='Add date']
 
         // (//div[@data-testid='CustomCalendarContainer']//div//div//h2)[1]
+
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
     }
 

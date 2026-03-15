@@ -15,9 +15,11 @@ public class CalendarTest2 {
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--disable-notifications");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(options);
-        driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
-        driver.findElement(By.id("datepicker")).click();
+        CalendarTest2 test1=new CalendarTest2();
+        CalendarTest2 test2=new CalendarTest2();
+        test1.driver = new ChromeDriver(options);
+        test1.driver.get("https://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
+        test1.driver.findElement(By.id("datepicker")).click();
         //june 10 2030
         actMonth = driver.findElement(By.xpath("//div[@class='ui-datepicker-title']//span[@class='ui-datepicker-month']")).getText();
         actYear = driver.findElement(By.xpath("//div[@class='ui-datepicker-title']//span[@class='ui-datepicker-year']")).getText();
