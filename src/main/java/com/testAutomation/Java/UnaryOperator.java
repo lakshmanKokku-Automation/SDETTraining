@@ -6,8 +6,7 @@ public class UnaryOperator {
 
 //        int i=5;
 //
-//        int x=i++; i=5
-  //      //i=6
+//        int x=i++; i=5//      //i=6
 //
 //        //int x= (i=5+1);
 //
@@ -26,7 +25,7 @@ public class UnaryOperator {
 
        int i=100;
 
-       System.out.println(i++);//100
+       System.out.println(++i);//101
 
        System.out.println(i);//101
 
